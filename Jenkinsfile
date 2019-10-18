@@ -8,6 +8,7 @@ pipeline {
     environment {
         CI = 'true'
 		USERNAME = credentials('USERNAME')
+		TEST_UYP = credentials('TEST_UYP')
     }
     stages {
         stage('Build') {
