@@ -20,7 +20,7 @@ describe("General tests", () => {
                   });
          });
 
-         it("should return ok true", (done) => {
+         it("should return ok false", (done) => {
             chai.request(app)
                 .get('/notok')
                 .end((err, res) => {
