@@ -18,5 +18,12 @@ pipeline {
                 sh 'npm test'
             }
         }
+		stage('Deploy') {
+            steps {
+                sh './scripts/deploy.sh'
+				input messsage:'Has acabado de ver el server?()Click "Proceed" para continuar'
+				sh './scripts/kill.sh'
+            }
+        }
     }
 }
