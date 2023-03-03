@@ -9,7 +9,7 @@
     "test": "mocha --reporter spec tests/*.js --exit"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0"
   },
